@@ -1,0 +1,30 @@
+#button {
+    position:absolute;
+    top: 10%;
+    left: 45%;
+}
+
+#index {
+    background-color: #1E3D58;
+}
+
+#form {
+    background-color: #057DCD;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: auto;
+}
+
+.fields {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-left: 20px;
+}
+
+#submit {
+    position: relative;
+    left: 50%;
+}
