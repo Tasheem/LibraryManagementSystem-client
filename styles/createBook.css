@@ -1,0 +1,83 @@
+body {
+    background-color: #1E3D58;
+    height: 2000px;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". . ."
+    ". field1 ."
+    ". field2 ."
+    ". field3 ."
+    ". button .";
+    align-items: center;
+    justify-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+
+#field1 {
+    grid-area: field1;
+}
+
+#field2 {
+    grid-area: field2;
+}
+
+#field3 {
+    grid-area: field3;
+}
+
+.field-containers {
+    display: flex;
+    background-color: rgb(141, 140, 140);
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15%;
+    border-color: rgba(156, 60, 5, 0.808);
+    box-shadow: 0px 10px 40px rgb(156, 60, 5);
+}
+
+.field-labels {
+    font-size: 1.3em;
+    color: rgba(1, 59, 218, 0.808);
+}
+
+.input-fields {
+    height: 50%;
+    width: 50%;
+    margin-left: 5%;
+    border-style: solid;
+    border-color: rgba(1, 59, 218, 0.808);
+}
+
+#submit-btn {
+    grid-area: button;
+    width: 50%;
+    height: 30%;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 10px;
+    border-color: rgba(156, 60, 5, 0.808);
+    background-color: rgb(1, 218, 1);
+    box-shadow: 0px 10px 40px rgb(1, 218, 1);
+}
+
+#submit-btn:hover {
+    border-color: rgba(104, 40, 4, 0.808);
+    background-color: rgb(0, 109, 0);
+    box-shadow: 0px 10px 40px rgb(0, 109, 0);
+}
+
+#submit-btn:active {
+    transform: translateY(5px);
+}
