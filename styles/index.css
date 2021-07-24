@@ -36,12 +36,12 @@ body {
     border-right-width: 2px;
     z-index: 1;
     box-shadow: 0px 10px 50px var(--secondary-btn-color);
-    text-align: center;
 }
 
-#username:focus {
-    outline: none;
-    box-shadow: 0px 10px 50px var(--secondary-btn-color-hover);
+#username::placeholder {
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
 
 #password {
@@ -56,12 +56,16 @@ body {
     border-right-width: 2px;
     z-index: 0;
     box-shadow: 0px 10px 50px var(--secondary-btn-color);
-    text-align: center;
 }
 
 #password:focus {
-    outline: none;
-    box-shadow: 0px 10px 50px var(--secondary-btn-color-hover);
+    box-shadow: 0px 10 50px var(--secondary-btn-color-hover);
+}
+
+#password::placeholder {
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
 
 #login {
@@ -83,5 +87,4 @@ body {
     box-shadow: 0px 10px 50px var(--secondary-btn-color-hover);
     border-color: var(--secondary-btn-color-hover);
     background-color: var(--primary-btn-color-hover);
-    cursor:pointer;
 }
