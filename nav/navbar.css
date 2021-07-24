@@ -6,7 +6,6 @@ body {
     position: sticky;
     top: 0%;
     background-color: rgb(156, 60, 5);
-    color: #ffff;
     width: 100vw;
     height: 15vh;
     z-index: 999;
@@ -30,9 +29,13 @@ body {
 .nav-links-elms {
     text-decoration: none;
     font-size: 3vh;
-    padding: 1em;
-    background-color: gray;
+    margin-right: 2vw;
+    background-color: rgb(141, 140, 140);
     color: rgba(1, 59, 218, 0.808)
+}
+
+.nav-links-elms:visited {
+    color: rgba(1, 59, 218, 0.808);
 }
 
 .user-related {
@@ -44,13 +47,14 @@ body {
 .user-related-elms {
     text-decoration: none;
     font-size: 3vh;
-    
-}
-
-.nav-links-elms:visited {
+    background-color: rgb(141, 140, 140);
     color: rgba(1, 59, 218, 0.808)
 }
 
+.user-related-elms:visited {
+    color: rgba(1, 59, 218, 0.808);
+}
+
 #register {
-    padding: 20px;
+    margin-right: 20px;
 }
