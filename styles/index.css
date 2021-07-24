@@ -1,5 +1,13 @@
 body {
     background-color: #1E3D58;
+    height: 2000px;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: gray; */
 }
 
 #form {

@@ -1,40 +1,54 @@
 body {
-    height: 1000px;
     margin: 0;
 }
 
-nav {
-    position: relative;
+#render-navbar {
+    position: sticky;
+    top: 0%;
     background-color: rgb(156, 60, 5);
     color: #ffff;
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: 15vh;
+    z-index: 999;
 }
 
 #logo {
     position: absolute;
-    width: 100px;
-    height: 80px;
+    width: 15%;
+    height: 80%;
+    max-width: 130px;
     top: 10%;
 }
 
 .navigation-links {
     position: absolute;
-    color: #ffff;
     top: 35%;
-    left: 10%;
+    left: 17%;
     font-size: 1.5rem;
+}
+
+.nav-links-elms {
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 1em;
+    background-color: gray;
+    color: rgba(1, 59, 218, 0.808)
 }
 
 .user-related {
     position: absolute;
     right: 5%;
     top: 35%;
-    font-size: 1.5rem;
 }
 
-.nav-links-elms {
-    padding: 20px;
+.user-related-elms {
+    text-decoration: none;
+    font-size: 3vh;
+    
+}
+
+.nav-links-elms:visited {
+    color: rgba(1, 59, 218, 0.808)
 }
 
 #register {

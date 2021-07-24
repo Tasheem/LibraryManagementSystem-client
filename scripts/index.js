@@ -1,4 +1,4 @@
-document.getElementById('submit').addEventListener(
+document.getElementById('login').addEventListener(
     'click', submitForm
 )
 
