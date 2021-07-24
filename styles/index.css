@@ -1,3 +1,10 @@
+:root {
+    --primary-btn-color: rgba(1, 59, 218, 0.808);
+    --secondary-btn-color: rgb(25, 182, 255);
+    --primary-btn-color-hover: rgba(0, 50, 189, 0.808);
+    --secondary-btn-color-hover: #057DCD;
+}
+
 body {
     background-color: #1E3D58;
     height: 2000px;
@@ -29,6 +36,7 @@ body {
     border-width: 0px;
     border-right-width: 2px;
     z-index: 1;
+    box-shadow: 0px 10px 50px rgb(25, 182, 255);
 }
 
 #username::placeholder {
@@ -48,6 +56,7 @@ body {
     border-width: 0px;
     border-right-width: 2px;
     z-index: 0;
+    box-shadow: 0px 10px 50px rgb(25, 182, 255);
 }
 
 #password::placeholder {
@@ -62,17 +71,17 @@ body {
     height: 100%;
     width: 20%;
     left: 80%;
-    background-color: rgba(1, 59, 218, 0.808);
+    background-color: var(--primary-btn-color);
     border-style: solid;
     border-width: 2px;
-    border-color:rgb(25, 182, 255);
-    box-shadow: 0px 10px 50px rgb(25, 182, 255);
-    color: rgb(25, 182, 255);
+    border-color:var(--secondary-btn-color);
+    box-shadow: 0px 10px 50px var(--secondary-btn-color);
+    color: var(--secondary-btn-color);
 }
 
 #login:hover {
-    color: #057DCD;
-    box-shadow: 0px 10px 50px #057DCD;
-    border-color: #057DCD;
-    background-color: rgba(0, 50, 189, 0.808);
+    color: var(--secondary-btn-color-hover);
+    box-shadow: 0px 10px 50px var(--secondary-btn-color-hover);
+    border-color: var(--secondary-btn-color-hover);
+    background-color: var(--primary-btn-color-hover);
 }
