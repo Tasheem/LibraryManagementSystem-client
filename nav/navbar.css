@@ -1,3 +1,7 @@
+:root {
+    --main-blue: rgba(1, 59, 218, 0.808);
+}
+
 body {
     margin: 0;
 }
@@ -31,11 +35,11 @@ body {
     font-size: 3vh;
     margin-right: 2vw;
     background-color: rgb(141, 140, 140);
-    color: rgba(1, 59, 218, 0.808)
+    color: var(--main-blue);
 }
 
 .nav-links-elms:visited {
-    color: rgba(1, 59, 218, 0.808);
+    color: var(--main-blue);
 }
 
 .user-related {
@@ -48,11 +52,11 @@ body {
     text-decoration: none;
     font-size: 3vh;
     background-color: rgb(141, 140, 140);
-    color: rgba(1, 59, 218, 0.808)
+    color: var(--main-blue);
 }
 
 .user-related-elms:visited {
-    color: rgba(1, 59, 218, 0.808);
+    color: var(--main-blue);
 }
 
 #register {
