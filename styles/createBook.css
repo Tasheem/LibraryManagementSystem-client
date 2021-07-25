@@ -12,10 +12,11 @@ body {
     ". field1 ."
     ". field2 ."
     ". field3 ."
+    ". field4 ."
     ". button .";
     align-items: center;
     justify-items: center;
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
 }
 
@@ -29,6 +30,10 @@ body {
 
 #field3 {
     grid-area: field3;
+}
+
+#field4 {
+    grid-area: field4;
 }
 
 .field-containers {
