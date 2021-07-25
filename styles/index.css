@@ -88,3 +88,15 @@ body {
     border-color: var(--secondary-btn-color-hover);
     background-color: var(--primary-btn-color-hover);
 }
+
+@media(max-width: 737px) {
+    #form {
+        left: 20%;
+    }
+}
+
+@media(max-width: 627px) {
+    #form {
+        left: 0%;
+    }
+}

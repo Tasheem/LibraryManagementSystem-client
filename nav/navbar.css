@@ -28,6 +28,8 @@ body {
     top: 35%;
     left: 17%;
     font-size: 1.5rem;
+    height: 100%;
+    width: 21vw;
 }
 
 .nav-links-elms {
@@ -61,4 +63,10 @@ body {
 
 #register {
     margin-right: 20px;
+}
+
+@media(max-width: 737px) {
+    .navigation-links {
+        top: 10%;
+    }
 }
