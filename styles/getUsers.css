@@ -1,12 +1,13 @@
 body {
     background-color: rgb(71, 71, 71);
+    height: 2000px;
 }
 
 #button {
     position: absolute;
     height: 50px;
     width: 150px;
-    top: 10%;
+    top: 20%;
     left: 43%;
     border-left: solid;
     border-right: solid;

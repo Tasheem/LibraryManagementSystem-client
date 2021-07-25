@@ -4,7 +4,7 @@ if(token != null) {
     let div = document.getElementById('render-navbar');
     
     let request = new XMLHttpRequest();
-    request.open('GET', '../nav/navbar-logged-in.html', true);
+    request.open('GET', 'http://127.0.0.1:5500/nav/navbar-logged-in.html', true);
     
     request.onload = function() {
         if(this.status == 200 || this.status == 304) {
@@ -27,14 +27,14 @@ if(token != null) {
     let div = document.getElementById('render-navbar');
     
     let request = new XMLHttpRequest();
-    request.open('GET', '../nav/navbar.html', true);
+    request.open('GET', 'http://127.0.0.1:5500/nav/navbar.html', true);
     
     request.onload = function() {
-        if(this.status == 200) {
+        if(this.status == 200 || this.status == 304) {
             let content = this.responseText;
             div.innerHTML = content;
 
-            document.getElementById('login').addEventListener(
+            document.getElementById('log-in').addEventListener(
                 'click', login
             );
         }
