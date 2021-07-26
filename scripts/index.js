@@ -39,7 +39,7 @@ function submitForm() {
             feedback.textContent = 'Logging In...';
             feedback.style.color = '#37fc72';
             setTimeout(() => {
-                window.location = './getBooks.html';
+                window.location = './getUsers.html';
             }, 2500);
         }
     }
