@@ -1,13 +1,14 @@
 body {
     background-color: rgb(71, 71, 71);
     height: 2000px;
+    position: relative;
 }
 
 #button {
     position: absolute;
     height: 50px;
     width: 150px;
-    top: 20%;
+    top: 10%;
     left: 43%;
     border-left: solid;
     border-right: solid;
@@ -28,5 +29,16 @@ body {
 
 table {
     position: absolute;
-    top: 30%;
+    top: 15%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    color: rgb(187, 72, 5);
+}
+
+td {
+    color: rgb(25, 182, 255);
+    text-align: center;
 }
