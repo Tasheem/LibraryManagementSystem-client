@@ -47,7 +47,7 @@ function displayBooks(books) {
         let nameID = `name${i + 1}`;
         let authorID = `author${i + 1}`;
         let priceID = `price${i + 1}`;
-        let editDeleteElmIdentifierClass = books[i].Id;
+        let editDeleteElmIdentifierClass = books[i].id;
         const editStylingClass = 'edit';
         const deleteStylingClass = 'delete';
         let containerID = `container${i + 1}`;
@@ -63,23 +63,23 @@ function displayBooks(books) {
 
         let id = document.createElement('td');
         id.id = idID;
-        id.textContent = books[i].Id;
+        id.textContent = books[i].id;
         tableRow.appendChild(id);
 
         let name = document.createElement('td');
         name.id = nameID;
-        name.textContent = books[i].Name;
+        name.textContent = books[i].name;
         tableRow.appendChild(name);
 
         let author = document.createElement('td');
         author.id = authorID;
-        author.textContent = books[i].AuthorFirstName
-        + " " + books[i].AuthorLastName;
+        author.textContent = books[i].authorFirstName
+        + " " + books[i].authorLastName;
         tableRow.appendChild(author);
 
         let price = document.createElement('td');
         price.id = priceID;
-        price.textContent = `$${books[i].Price}`;
+        price.textContent = `$${books[i].price}`;
         tableRow.appendChild(price);
 
         let editDeleteContainer = document.createElement('td');

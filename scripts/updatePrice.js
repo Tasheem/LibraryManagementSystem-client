@@ -29,8 +29,8 @@ function sendPUT() {
     let newPrice = document.getElementById('price-input').value;
 
     let payload = {};
-    payload.Id = bookID;
-    payload.Price = newPrice;
+    payload.id = bookID;
+    payload.price = parseFloat(newPrice);
 
     let json = JSON.stringify(payload);
 
