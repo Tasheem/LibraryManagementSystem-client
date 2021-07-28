@@ -3,6 +3,14 @@ document.getElementById('sub-btn').addEventListener(
 );
 
 function sendPUT() {
+    let newPrice = document.getElementById('price-input').value;
+    let feedback = document.getElementById('feedback');
+    if(isNaN(newPrice)) {
+        feedback.textContent = 'Value must be a number';
+        feedback.style.color = 'red';
+        return;
+    }
+    
     let request = new XMLHttpRequest();
 
     let URI = 'http://localhost:4000/api/books';
@@ -14,19 +22,22 @@ function sendPUT() {
     
     request.onload = function() {
         if(this.status === 200) {
-            console.log('RESPONSE: ');
-            console.log(request.response);
+            feedback.textContent = 'Price Successfully Updated!';
+            feedback.style.color = 'green';
+            setTimeout(() => {
+                window.location.href = 'http://127.0.0.1:5500/views/index.html';
+            }, 2500);
         }
     }
     
     request.onerror = () => {
         console.log('error');
+        feedback.textContent = 'Error Updating!';
+        feedback.style.color = 'red';
     }
     
     let bookID = window.sessionStorage.getItem('Book ID');
     window.sessionStorage.removeItem('Book ID');
-
-    let newPrice = document.getElementById('price-input').value;
 
     let payload = {};
     payload.id = bookID;
@@ -34,6 +45,6 @@ function sendPUT() {
 
     let json = JSON.stringify(payload);
 
-    console.log(json);
+    // console.log(json);
     request.send(json);
 }

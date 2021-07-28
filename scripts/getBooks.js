@@ -13,8 +13,8 @@ function getBooks() {
 
     request.onload = function() {
         if(this.status === 200) {
-            console.log('RESPONSE: ');
-            console.log(request.response);
+            // console.log('RESPONSE: ');
+            // console.log(request.response);
 
             let json = JSON.parse(request.response);
             displayBooks(json);
@@ -100,7 +100,7 @@ function displayBooks(books) {
     }
 
     let editArr = document.getElementsByClassName('edit');
-    console.log(editArr);
+    // console.log(editArr);
     for(let i = 0; i < editArr.length; i++) {
         editArr[i].addEventListener('click', redirectToEditView)
     }
@@ -115,7 +115,7 @@ function removeAllChildNodes(parent) {
 function redirectToEditView(e) {
     const className = e.target.className;
     let id = className.replace(' edit', '');
-    console.log(`ID: ${id}`);
+    // console.log(`ID: ${id}`);
 
     window.sessionStorage.setItem('Book ID', id);
 }
