@@ -1,8 +1,10 @@
+import deleteBook from './deleteBook.js';
+
 document.getElementById('button').addEventListener(
     'click', getBooks
 );
 
-function getBooks() {
+export function getBooks() {
     let request = new XMLHttpRequest();
 
     let URI = 'http://localhost:4000/api/books';
@@ -92,7 +94,7 @@ function displayBooks(books) {
         editDeleteContainer.appendChild(editLink);
 
         let deleteLink = document.createElement('a');
-        deleteLink.href = '*';
+        deleteLink.href = '#';
         deleteLink.className = `${editDeleteElmIdentifierClass} ${deleteStylingClass}`;
         deleteLink.textContent = 'Delete';
         editDeleteContainer.appendChild(deleteLink);
@@ -100,9 +102,11 @@ function displayBooks(books) {
     }
 
     let editArr = document.getElementsByClassName('edit');
+    let deleteArr = document.getElementsByClassName('delete');
     // console.log(editArr);
     for(let i = 0; i < editArr.length; i++) {
-        editArr[i].addEventListener('click', redirectToEditView)
+        editArr[i].addEventListener('click', redirectToEditView);
+        deleteArr[i].addEventListener('click', deleteBook);
     }
 }
 
@@ -118,9 +122,4 @@ function redirectToEditView(e) {
     // console.log(`ID: ${id}`);
 
     window.sessionStorage.setItem('Book ID', id);
-}
-
-// TODO: send delete request to API for deletion of book.
-function deleteBook() {
-
 }
