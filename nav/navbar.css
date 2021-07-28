@@ -4,6 +4,9 @@
 
 body {
     margin: 0;
+    background-color: #1E3D58;
+    position: relative;
+    height: 2000px;
 }
 
 #render-navbar {

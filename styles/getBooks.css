@@ -6,7 +6,7 @@ body {
     position: absolute;
     height: 50px;
     width: 150px;
-    top: 20%;
+    top: 10%;
     left: 43%;
     border-left: solid;
     border-right: solid;
@@ -23,4 +23,33 @@ body {
     background-color: rgba(0, 50, 187, 0.808);
     border-color:rgb(4, 134, 194);
     box-shadow: 0px 10px 50px rgb(4, 134, 194);
+}
+
+table {
+    position: absolute;
+    top: 15%;
+    table-layout: fixed;
+    width: 90%;
+    border: 1px solid black;
+}
+
+th {
+    color: rgb(187, 72, 5);
+    border: 1px solid black;
+}
+
+td {
+    color: rgb(25, 182, 255);
+    text-align: center;
+    border: 1px solid black;
+}
+
+.edit {
+    text-decoration: none;
+    color: inherit;
+}
+
+.delete {
+    text-decoration: none;
+    color: rgb(243, 64, 64);
 }

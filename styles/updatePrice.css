@@ -1,0 +1,36 @@
+:root {
+    --primary-btn-color: rgba(1, 59, 218, 0.808);
+    --secondary-btn-color: rgb(25, 182, 255);
+    --primary-btn-color-hover: rgba(0, 50, 189, 0.808);
+    --secondary-btn-color-hover: #057DCD;
+}
+
+#price-form {
+    position:absolute;
+    top: 10%;
+    left: 30%;
+    height: 40px;
+    width: 40vw;
+}
+
+#price-input {
+    height: 96%;
+    width: 68%;
+    padding: 0;
+    border-right-style: solid;
+    border-color: var(--primary-btn-color);
+    border-width: 2px;
+}
+
+#sub-btn {
+    position:absolute;
+    height: 105%;
+    width: 30%;
+    padding: 0;
+    background-color: var(--primary-btn-color);
+    border-style: solid;
+    border-width: 2px;
+    border-color:var(--secondary-btn-color);
+    box-shadow: 0px 10px 50px var(--secondary-btn-color);
+    color: var(--secondary-btn-color);
+}
