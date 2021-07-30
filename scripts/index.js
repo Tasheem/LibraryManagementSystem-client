@@ -41,6 +41,9 @@ function submitForm() {
             setTimeout(() => {
                 window.location = './getUsers.html';
             }, 2500);
+        } else if(this.status === 502) {
+            feedback.textContent = 'Error';
+            feedback.style.color = 'red';
         }
     }
 

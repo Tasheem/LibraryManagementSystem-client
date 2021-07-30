@@ -5,7 +5,7 @@ document.getElementById('button').addEventListener(
 function getUsers() {
     let request = new XMLHttpRequest();
 
-    let URI = 'http://localhost:4000/api/user';
+    let URI = 'http://localhost:4000/api/users';
     request.open('GET', URI, true);
 
     let token = window.sessionStorage.getItem('Token');
@@ -61,27 +61,27 @@ function displayUsers(users) {
 
         let id = document.createElement('td');
         id.id = idID;
-        id.textContent = users[i].Id;
+        id.textContent = users[i].id;
         tableRow.appendChild(id);
 
         let fname = document.createElement('td');
         fname.id = fnameID;
-        fname.textContent = users[i]['First Name'];
+        fname.textContent = users[i].firstName;
         tableRow.appendChild(fname);
 
         let lname = document.createElement('td');
         lname.id = lnameID;
-        lname.textContent = users[i]['Last Name'];
+        lname.textContent = users[i].lastName;
         tableRow.appendChild(lname);
 
         let username = document.createElement('td');
         username.id = usernameID;
-        username.textContent = users[i].Username;
+        username.textContent = users[i].username;
         tableRow.appendChild(username);
 
         let password = document.createElement('td');
         password.id = passwordID;
-        password.textContent = users[i].Password;
+        password.textContent = users[i].password;
         tableRow.appendChild(password);
     }
 }
