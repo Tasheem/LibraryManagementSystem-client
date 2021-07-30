@@ -68,6 +68,10 @@ body {
     margin-right: 20px;
 }
 
+#nav-delete-account {
+    margin-right: 20px;
+}
+
 @media(max-width: 737px) {
     .navigation-links {
         top: 10%;

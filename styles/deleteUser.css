@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(71, 71, 71);
+    height: 2000px;
+    position: relative;
+}
+
+#delete-account {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: 10%;
+    left: 43%;
+    border-left: solid;
+    border-right: solid;
+    border-top: double;
+    border-bottom: double;
+    border-color: rgb(250, 48, 48);
+    border-width: 5px;
+    background-color: rgba(218, 8, 1, 0.808);
+    color: #ffff;
+    box-shadow: 0px 10px 50px rgb(250, 48, 48);
+}
+
+#delete-account:hover {
+    background-color: rgba(185, 6, 0, 0.808);
+    border-color:rgb(209, 38, 38);
+    box-shadow: 0px 10px 50px rgb(209, 38, 38);
+}
