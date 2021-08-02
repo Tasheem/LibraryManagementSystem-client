@@ -26,17 +26,18 @@ body {
 }
 
 table {
-    position: absolute;
-    top: 15%;
     table-layout: fixed;
     width: 100%;
+    border: 1px solid black;
 }
 
 th {
     color: rgb(187, 72, 5);
+    border: 1px solid black;
 }
 
 td {
     color: rgb(25, 182, 255);
     text-align: center;
+    border: 1px solid black;
 }

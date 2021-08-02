@@ -39,7 +39,7 @@ function submitForm() {
             feedback.textContent = 'Logging In...';
             feedback.style.color = '#37fc72';
             setTimeout(() => {
-                window.location = './getUsers.html';
+                window.location = 'http://127.0.0.1:5500';
             }, 2500);
         } else if(this.status === 401) {
             feedback.textContent = 'Incorrect Username or Password';

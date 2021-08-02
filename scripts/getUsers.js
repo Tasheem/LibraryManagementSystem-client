@@ -11,8 +11,8 @@ function getUsers() {
 
     request.onload = function() {
         if(this.status === 200) {
-            console.log('RESPONSE: ');
-            console.log(request.response);
+            /* console.log('RESPONSE: ');
+            console.log(request.response); */
 
             let json = JSON.parse(request.response);
             displayUsers(json);
