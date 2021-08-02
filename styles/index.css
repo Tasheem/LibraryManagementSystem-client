@@ -16,7 +16,7 @@
 .heading-container {
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 22%;
     background-color: rgba(1, 59, 218, 0.808);
 }
 
@@ -55,4 +55,19 @@
 
 #button:active {
     transform: translateY(5px);
+}
+
+.repo-container {
+    position: absolute;
+    top: 60%;
+    margin-left: 35%;
+    margin-right: 20%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.repo-container a {
+    color:rgb(156, 60, 5);
 }
