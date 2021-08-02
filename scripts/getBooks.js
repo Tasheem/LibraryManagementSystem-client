@@ -1,8 +1,6 @@
 import deleteBook from './deleteBook.js';
 
-document.getElementById('button').addEventListener(
-    'click', getBooks
-);
+getBooks();
 
 export function getBooks() {
     let request = new XMLHttpRequest();
