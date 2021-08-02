@@ -44,11 +44,11 @@ if(token != null) {
 }
 
 function login() {
-    window.location.href = 'http://127.0.0.1:5500/views/index.html';
+    window.location.href = 'http://127.0.0.1:5500/login.html';
 }
 
 function logout() {
     window.sessionStorage.removeItem('Token');
     // window.sessionStorage.removeItem('Name');
-    window.location.href = 'http://127.0.0.1:5500/views/index.html';
+    window.location.href = 'http://127.0.0.1:5500/index.html';
 }

@@ -1,11 +1,9 @@
 body {
     background-color: rgb(71, 71, 71);
-    height: 2000px;
     position: relative;
 }
 
 #button {
-    position: absolute;
     height: 50px;
     width: 150px;
     top: 10%;

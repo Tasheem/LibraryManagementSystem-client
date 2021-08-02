@@ -1,6 +1,4 @@
-document.getElementById('button').addEventListener(
-    'click', getUsers
-);
+getUsers();
 
 function getUsers() {
     let request = new XMLHttpRequest();
@@ -18,6 +16,8 @@ function getUsers() {
 
             let json = JSON.parse(request.response);
             displayUsers(json);
+        } else if(this.status === 401) {
+            window.location.href = '../views/login.html';
         }
     }
 
