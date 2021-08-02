@@ -72,6 +72,10 @@ body {
     cursor: pointer;
 }
 
+#logout {
+    cursor: pointer;
+}
+
 #nav-delete-account {
     margin-right: 20px;
 }

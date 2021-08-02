@@ -41,8 +41,11 @@ function submitForm() {
             setTimeout(() => {
                 window.location = './getUsers.html';
             }, 2500);
-        } else if(this.status === 502) {
-            feedback.textContent = 'Error';
+        } else if(this.status === 401) {
+            feedback.textContent = 'Incorrect Username or Password';
+            feedback.style.color = 'red';
+        } else {
+            feedback.textContent = 'Error Logging In';
             feedback.style.color = 'red';
         }
     }

@@ -33,18 +33,10 @@ if(token != null) {
         if(this.status == 200 || this.status == 304) {
             let content = this.responseText;
             div.innerHTML = content;
-
-            document.getElementById('log-in').addEventListener(
-                'click', login
-            );
         }
     }
     
     request.send();
-}
-
-function login() {
-    window.location.href = 'http://127.0.0.1:5500/login.html';
 }
 
 function logout() {
