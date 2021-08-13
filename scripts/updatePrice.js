@@ -25,7 +25,7 @@ function sendPUT() {
             feedback.textContent = 'Price Successfully Updated!';
             feedback.style.color = 'green';
             setTimeout(() => {
-                window.location.href = 'http://127.0.0.1:5500/views/index.html';
+                window.location.href = 'http://127.0.0.1:5500/index.html';
             }, 2500);
         }
     }

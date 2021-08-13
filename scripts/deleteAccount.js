@@ -14,7 +14,7 @@ document.getElementById('delete-account').addEventListener(
                 if(this.status === 200) {
                     console.log('Successful delete.');
                     window.sessionStorage.removeItem('Token');
-                    window.location.href = 'http://127.0.0.1:5500/views/index.html';
+                    window.location.href = 'http://127.0.0.1:5500/index.html';
                 } else {
                     alert('There was an error deleting your account.');
                 }
