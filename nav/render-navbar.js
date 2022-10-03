@@ -27,7 +27,7 @@ if(token != null) {
     let div = document.getElementById('render-navbar');
     
     let request = new XMLHttpRequest();
-    request.open('GET', 'http://127.0.0.1:5500/nav/navbar.html', true);
+    request.open('GET', 'http://127.0.0.1:5501/nav/navbar.html', true);
     
     request.onload = function() {
         if(this.status == 200 || this.status == 304) {
@@ -42,5 +42,5 @@ if(token != null) {
 function logout() {
     window.sessionStorage.removeItem('Token');
     // window.sessionStorage.removeItem('Name');
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+    window.location.href = 'http://127.0.0.1:5501/index.html';
 }
